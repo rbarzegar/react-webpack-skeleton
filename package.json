@@ -1,0 +1,42 @@
+{
+   "name": "react-webpack-skeleton",
+   "version": "1.0.0",
+   "description": "React and Webpack Skeleton",
+   "main": "./src/app.js",
+   "author": "Roland Barzegar",
+   "license": "MIT",
+   "scripts": {
+      "build": "webpack --mode production",
+      "dev": "webpack --mode development"
+   },
+   "dependencies": {
+      "normalize.css": "^8.0.0",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-modal": "^3.3.1"
+   },
+   "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-core": "^6.26.0",
+      "babel-loader": "^7.1.4",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-preset-env": "1.5.2",
+      "babel-preset-react": "6.24.1",
+
+      "css-loader": "^0.28.10",
+      "postcss": "^6.0.19",
+      "postcss-cssnext": "^3.1.0",
+      "postcss-easy-import": "^3.0.0",
+      "postcss-loader": "^2.1.1",
+      "postcss-nested": "^3.0.0",
+      "postcss-sassy-mixins": "^2.1.0",
+      "postcss-simple-vars": "^4.1.0",
+      "rucksack-css": "^1.0.2",
+      "style-loader": "^0.20.3",
+
+      "validator": "^9.4.1",
+      "webpack": "^4.1.1",
+      "webpack-cli": "^2.0.11",
+      "webpack-dev-server": "^3.1.1"
+   }
+}
