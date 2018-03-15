@@ -1,5 +1,6 @@
 console.log(__dirname);
 const path = require("path");
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 // Folder settings
 const entry = "src/app.js";
@@ -30,8 +31,18 @@ module.exports = {
       ]
    },
    devtool: "cheap-module-eval-sourcemap",
-   // devServer: {
-   //    contentBase: path.join(__dirname, outputPath),
-   //    open: true
-   // }
+   devServer: {
+      contentBase: path.join(__dirname, outputPath),
+   },
+   plugins: [
+      new BrowserSyncPlugin({
+         host: 'localhost',
+         port: 8000,
+         proxy: 'http://localhost:8080',
+      },
+      {
+         reload: false
+      }
+   )
+   ]
 };
